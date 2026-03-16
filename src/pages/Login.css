@@ -1,0 +1,109 @@
+
+
+/* Full page container with animated gradient */
+.login-page {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #667eea, #764ba2, #ff6a00, #f83600);
+  background-size: 800% 800%;
+  animation: gradientAnimation 15s ease infinite;
+}
+
+/* Gradient animation keyframes */
+@keyframes gradientAnimation {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Login card with glassmorphism effect */
+.login-card {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(12px);
+  padding: 35px;
+  width: 320px;
+  border-radius: 16px;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.25);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Lift effect on hover */
+.login-card:hover {
+  transform: translateY(-5px) scale(1.02);
+  box-shadow: 0 18px 35px rgba(0,0,0,0.35);
+}
+
+/* Headings */
+.login-card h2 {
+  margin-bottom: 20px;
+  color: #fff;
+  font-size: 2rem;
+  text-shadow: 2px 2px 10px rgba(0,0,0,0.3);
+}
+
+/* Inputs */
+.login-card input {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border-radius: 8px;
+  border: 1px solid rgba(255,255,255,0.6);
+  background: rgba(255,255,255,0.2);
+  color: #fff;
+  font-size: 1rem;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+}
+
+.login-card input::placeholder {
+  color: rgba(255,255,255,0.7);
+}
+
+.login-card input:focus {
+  outline: none;
+  border-color: #ffae00;
+  background: rgba(255,255,255,0.3);
+  box-shadow: 0 0 8px rgba(255,174,0,0.5);
+}
+
+/* Buttons */
+.login-card button {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  background: linear-gradient(135deg, #ff6a00, #f83600);
+  color: #fff;
+  font-size: 1.1rem;
+  transition: transform 0.2s ease, box-shadow 0.3s ease, filter 0.3s ease;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+}
+
+/* Button hover effect */
+.login-card button:hover {
+  transform: translateY(-3px) scale(1.03);
+  box-shadow: 0 12px 28px rgba(0,0,0,0.35);
+  filter: brightness(1.1);
+}
+
+/* Paragraphs and spans */
+.login-card p {
+  margin-top: 15px;
+  font-size: 14px;
+  color: rgba(255,255,255,0.9);
+}
+
+.login-card span {
+  font-weight: bold;
+  cursor: pointer;
+  color: #fff;
+  transition: color 0.3s ease;
+}
+
+.login-card span:hover {
+  color: #ffae00;
+}

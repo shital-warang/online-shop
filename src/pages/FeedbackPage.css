@@ -1,0 +1,39 @@
+/* FeedbackPage.css */
+
+.feedback-card {
+  max-width: 600px;
+  margin: 40px auto; /* center the card with top/bottom spacing */
+  background: white;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  font-family: Arial, sans-serif;
+}
+
+.text-purple {
+  color: #5b21b6;
+  font-weight: bold;
+}
+
+.form-label {
+  font-weight: 600;
+}
+
+.btn-purple {
+  background-color: #5b21b6 !important; /* override Bootstrap */
+  color: white !important;
+  font-weight: bold;
+  border-radius: 8px;
+  transition: background 0.3s;
+}
+
+.btn-purple:hover {
+  background-color: #43137a !important;
+}
+
+@media (max-width: 768px) {
+  .feedback-card {
+    padding: 20px;
+    margin: 20px;
+  }
+}

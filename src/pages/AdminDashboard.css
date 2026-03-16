@@ -1,0 +1,257 @@
+/* Global */
+body {
+  margin: 0;
+  font-family: "Inter", "Segoe UI", sans-serif;
+  background: #f4f6f9;
+  color: #111827;
+}
+
+/* Layout */
+.admin-layout {
+  display: flex;
+  height: 100vh;
+  background: #f4f6f9;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 260px;
+  background: linear-gradient(180deg, #111827, #1f2937);
+  color: white;
+  padding: 25px 18px;
+  box-shadow: 4px 0 20px rgba(0,0,0,0.2);
+}
+
+.sidebar h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 22px;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar li {
+  padding: 12px 15px;
+  cursor: pointer;
+  border-radius: 10px;
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 8px;
+  transition: 0.2s;
+}
+
+.sidebar li:hover {
+  background: #374151;
+  transform: translateX(6px);
+}
+
+/* Main Content */
+.main-content {
+  flex: 1;
+  padding: 25px;
+  overflow-y: auto;
+}
+
+/* ================= DASHBOARD STATS ================= */
+.stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 25px;
+  margin-bottom: 30px;
+}
+
+.stat-box {
+  background: white;
+  padding: 28px;
+  border-radius: 18px;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.1);
+  font-weight: 800;
+  font-size: 18px;
+  border-left: 6px solid #6366f1;
+  transition: 0.25s;
+}
+
+.stat-box:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 45px rgba(0,0,0,0.15);
+}
+
+/* ================= ADMIN FORM ================= */
+.admin-form {
+  background: white;
+  padding: 20px;
+  width: 360px;
+  border-radius: 18px;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.1);
+  margin-bottom: 25px;
+}
+
+.admin-form h3 {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.admin-form input {
+  width: 100%;
+  padding: 11px 14px;
+  margin: 7px 0;
+  border-radius: 10px;
+  border: 1px solid #d1d5db;
+  font-size: 14px;
+  transition: 0.2s;
+}
+
+.admin-form input:focus {
+  border-color: #6366f1;
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(99,102,241,0.25);
+}
+
+.admin-form button {
+  width: 100%;
+  padding: 12px;
+  background: linear-gradient(135deg, #6366f1, #9333ea);
+  color: white;
+  border: none;
+  border-radius: 12px;
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.25s;
+}
+
+.admin-form button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(99,102,241,0.5);
+}
+
+/* ================= TABLE ================= */
+table {
+  width: 100%;
+  background: white;
+  border-collapse: collapse;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.1);
+  margin-bottom: 30px;
+}
+
+th, td {
+  padding: 14px 12px;
+  border-bottom: 1px solid #e5e7eb;
+  text-align: center;
+  font-size: 14px;
+}
+
+th {
+  background: linear-gradient(135deg, #6366f1, #9333ea);
+  color: white;
+  font-weight: 700;
+}
+
+tr:hover {
+  background: #f9fafb;
+}
+
+/* ================= EDIT & DELETE BUTTONS ================= */
+
+/* Edit Button - Blue Gradient */
+.btn-edit {
+  background: linear-gradient(135deg, #0d6efd, #0dcaf0);
+  color: white;
+  padding: 9px 16px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 14px;
+  transition: 0.2s;
+}
+
+.btn-edit:hover {
+  background: linear-gradient(135deg, #0b5ed7, #0aa2c0);
+  transform: scale(1.12);
+  box-shadow: 0 6px 15px rgba(13,110,253,0.5);
+}
+
+/* Delete Button - Red Gradient */
+.btn-delete {
+  background: linear-gradient(135deg, #ff4d4f, #dc3545);
+  color: white;
+  padding: 9px 16px;
+  border: none;
+  border-radius: 10px;
+  margin-left: 8px;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 14px;
+  transition: 0.2s;
+}
+
+.btn-delete:hover {
+  background: linear-gradient(135deg, #d9363e, #bb2d3b);
+  transform: scale(1.12);
+  box-shadow: 0 6px 15px rgba(220,53,69,0.6);
+}
+/* EDIT BUTTON - BLUE */
+.btn-edit {
+  background: linear-gradient(135deg, #2563eb, #0ea5e9);
+  color: white;
+  padding: 10px 18px; /* bigger */
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  font-weight: 800;
+  font-size: 15px;
+  transition: 0.2s;
+}
+
+.btn-edit:hover {
+  background: linear-gradient(135deg, #1d4ed8, #0284c7);
+  transform: scale(1.12);
+  box-shadow: 0 6px 15px rgba(37,99,235,0.5);
+}
+
+/* DELETE BUTTON - RED */
+.btn-delete {
+  background: linear-gradient(135deg, #ef4444, #b91c1c);
+  color: white;
+  padding: 10px 18px; /* bigger */
+  border: none;
+  border-radius: 12px;
+  margin-left: 10px;
+  cursor: pointer;
+  font-weight: 800;
+  font-size: 15px;
+  transition: 0.2s;
+}
+
+.btn-delete:hover {
+  background: linear-gradient(135deg, #dc2626, #7f1d1d);
+  transform: scale(1.12);
+  box-shadow: 0 6px 15px rgba(239,68,68,0.6);
+}
+.admin-form button {
+  width: 100%;
+  padding: 14px 20px; /* bigger */
+  background: linear-gradient(135deg, #22c55e, #16a34a); /* green premium */
+  color: white;
+  border: none;
+  border-radius: 14px;
+  font-size: 16px;
+  font-weight: 800;
+  cursor: pointer;
+  transition: 0.25s;
+}
+
+.admin-form button:hover {
+  background: linear-gradient(135deg, #16a34a, #15803d);
+  transform: translateY(-3px) scale(1.03);
+  box-shadow: 0 12px 25px rgba(34,197,94,0.5);
+}
